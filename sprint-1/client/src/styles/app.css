@@ -1,0 +1,75 @@
+@font-face {
+  font-family: AvenirRegular;
+  src: url("../assets/fonts/AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: AvenirDemi;
+  src: url("../assets/fonts/AvenirNextLTPro-Demi.otf");
+}
+
+@font-face {
+  font-family: AvenirBold;
+  src: url("../assets/fonts/AvenirNextLTPro-Bold.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header-container {
+  display: block;
+  text-align: center;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.header-logo {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-search {
+  border: 1px solid #afafaf;
+}
+
+.upload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.upload-button {
+  width: 100%;
+}
+
+.upload-button__btn {
+  background-color: #0065ad;
+  color: #ffffff;
+  font-family: AvenirDemi;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 20px 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.upload-button__btn img {
+  padding-right: 16px;
+}
+
+.profile img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-left: 16px;
+}
+/*# sourceMappingURL=app.css.map */
