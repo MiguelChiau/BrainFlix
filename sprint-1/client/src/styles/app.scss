@@ -7,16 +7,16 @@
   box-sizing: border-box;
 }
 
+// Mobile friendly header
 .header-container {
   display: block;
   text-align: center;
   margin-left: 16px;
   margin-right: 16px;
-}
 
-.header-logo {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  &__logo {
+    padding: 10px 0px;
+  }
 }
 
 .header-search {
@@ -27,19 +27,16 @@
   border-radius: 5px;
   overflow: hidden;
   width: 100%;
-}
 
-.header-search__icon {
-  // padding: 0.5rem;
-  padding: 10px;
-}
+  &__icon {
+    padding: 10px;
+  }
 
-.header-search__text {
-  border: 0;
-  // padding: 0.5rem 0.5rem 0.5rem 0;
-  padding: 10px 10px 10px 0;
-
-  background-color: $alabaster;
+  &__text {
+    border: 0;
+    padding: 10px 10px 10px 0;
+    background-color: $alabaster;
+  }
 }
 
 .upload {
@@ -47,32 +44,88 @@
   justify-content: center;
   margin-top: 8px;
   margin-bottom: 16px;
-}
 
-.upload-button {
-  width: 100%;
-}
+  &-button {
+    width: 100%;
 
-.upload-button__btn {
-  background-color: $brainflix-blue;
-  color: $white;
-  font-family: AvenirDemi;
-  font-size: 12px;
-  line-height: 20px;
-  padding: 10px 10px;
-  border-radius: 5px;
-  width: 100%;
+    &__btn {
+      background-color: $brainflix-blue;
+      color: $white;
+      font-family: AvenirDemi;
+      font-size: 12px;
+      line-height: 20px;
+      padding: 10px 10px;
+      border-radius: 5px;
+      width: 100%;
+      text-align: center;
 
-  img {
-    padding-right: 16px;
+      //The upload icon
+      img {
+        padding-right: 16px;
+      }
+    }
   }
 }
 
 .profile {
+  //User profile image
   img {
     width: 42px;
     height: 42px;
     border-radius: 50%;
     margin-left: 16px;
+  }
+}
+
+// TABLET friendly header
+@media screen and (min-width: 768px) {
+  .header-container {
+    display: flex;
+    margin: 16px 24px 16px 24px;
+
+    &__logo {
+      margin-right: 169px;
+    }
+  }
+
+  .header-search {
+    height: 48px;
+  }
+
+  .upload {
+    justify-content: center;
+    margin-top: 0px;
+    height: 48px;
+
+    &-button__btn {
+      width: 100px;
+      height: 48px;
+      margin-left: 24px;
+      padding: 0;
+
+      img {
+        padding-right: 8px;
+      }
+    }
+  }
+
+  .profile {
+    img {
+      width: 48px;
+      height: 48px;
+      margin-left: 24px;
+    }
+  }
+}
+
+// DESKTOP friendly header
+@media screen and (min-width: 1440px) {
+  .header-container {
+    display: flex;
+    margin: 24px 180px 24px 180px;
+
+    &__logo {
+      margin-right: 509px;
+    }
   }
 }

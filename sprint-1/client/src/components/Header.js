@@ -7,7 +7,7 @@ import UserProfile from "../assets/Images/Mohan-muruge.jpg";
 function Header() {
   return (
     <div className="header-container">
-      <div className="header-logo">
+      <div className="header-container__logo">
         <img src={Logo} alt="" />
       </div>
 
