@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/Logo/Logo-brainflix.png";
+import Logo from "../assets/Logo/Logo-brainflix.svg";
 import SearchIcon from "../assets/Icons/SVG/Icon-search.svg";
 import UploadIcon from "../assets/Icons/SVG/Icon-upload.svg";
 import UserProfile from "../assets/Images/Mohan-muruge.jpg";
@@ -12,8 +12,14 @@ function Header() {
       </div>
 
       <div className="header-search">
-        <input type="text" placeholder=" Search" />
-        <img src={SearchIcon} alt="" />
+        <i className="header-search__icon">
+          <img src={SearchIcon} alt="" />
+        </i>
+        <input
+          className="header-search__text"
+          type="text"
+          placeholder=" Search"
+        />
       </div>
 
       <div className="upload">

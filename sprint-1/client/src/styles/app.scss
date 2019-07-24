@@ -15,12 +15,31 @@
 }
 
 .header-logo {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header-search {
+  display: inline-flex;
+  position: relative;
   border: 1px solid $silver;
+  background-color: $alabaster;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.header-search__icon {
+  // padding: 0.5rem;
+  padding: 10px;
+}
+
+.header-search__text {
+  border: 0;
+  // padding: 0.5rem 0.5rem 0.5rem 0;
+  padding: 10px 10px 10px 0;
+
+  background-color: $alabaster;
 }
 
 .upload {
@@ -40,8 +59,8 @@
   font-family: AvenirDemi;
   font-size: 12px;
   line-height: 20px;
-  padding: 20px 20px;
-  border-radius: 10px;
+  padding: 10px 10px;
+  border-radius: 5px;
   width: 100%;
 
   img {
@@ -51,8 +70,8 @@
 
 .profile {
   img {
-    width: 64px;
-    height: 64px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     margin-left: 16px;
   }

@@ -28,12 +28,30 @@
 }
 
 .header-logo {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header-search {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
   border: 1px solid #afafaf;
+  background-color: #fafafa;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.header-search__icon {
+  padding: 10px;
+}
+
+.header-search__text {
+  border: 0;
+  padding: 10px 10px 10px 0;
+  background-color: #fafafa;
 }
 
 .upload {
@@ -52,13 +70,13 @@
 }
 
 .upload-button__btn {
-  background-color: #0065ad;
+  background-color: #0095ff;
   color: #ffffff;
   font-family: AvenirDemi;
   font-size: 12px;
   line-height: 20px;
-  padding: 20px 20px;
-  border-radius: 10px;
+  padding: 10px 10px;
+  border-radius: 5px;
   width: 100%;
 }
 
@@ -67,8 +85,8 @@
 }
 
 .profile img {
-  width: 64px;
-  height: 64px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   margin-left: 16px;
 }
