@@ -144,20 +144,19 @@
   height: 183px;
 }
 
-.hero-background__video video {
+.hero-background video {
   width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .hero-background {
     background-color: black;
+    width: 100%;
     height: 400px;
   }
-  .hero-background__video {
+  .hero-background video {
     height: 400px;
-  }
-  .hero-background__video video {
-    width: 700px;
+    width: 91.14%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -166,12 +165,11 @@
 
 @media screen and (min-width: 1440px) {
   .hero-background {
-    background-color: black;
+    width: 100%;
     height: 540px;
   }
-  .hero-background__video video {
-    width: 944px;
-    display: block;
+  .hero-background video {
+    height: 540px;
   }
 }
 /*# sourceMappingURL=app.css.map */

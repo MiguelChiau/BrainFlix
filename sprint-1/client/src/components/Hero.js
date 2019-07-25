@@ -7,9 +7,7 @@ import Background from "../assets/Images/video-list-0.jpg";
 function Hero() {
   return (
     <div className="hero-background">
-      <div className="hero-background__video">
-        <video controls poster={Background} />
-      </div>
+      <video poster={Background} />
     </div>
   );
 }
