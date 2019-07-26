@@ -6,26 +6,24 @@ import Volume from "../assets/Icons/PNG/Icon-volume.png";
 
 function Hero() {
   return (
-    <div>
-      <div className="hero-background">
-        <video poster={Background} />
+    <div className="hero-background">
+      <video poster={Background} />
 
-        <div className="controls">
-          <button className="controls-play">
-            <img src={Play} alt="" />
+      <div className="controls">
+        <button className="controls-play">
+          <img src={Play} alt="" />
+        </button>
+
+        <div className="controls-range" />
+
+        <div className="controls-buttons">
+          <button>
+            <img src={Fullscreen} alt="" />
           </button>
 
-          <div className="controls-range" />
-
-          <div className="controls-buttons">
-            <button>
-              <img src={Fullscreen} alt="" />
-            </button>
-
-            <button>
-              <img src={Volume} alt="" />
-            </button>
-          </div>
+          <button>
+            <img src={Volume} alt="" />
+          </button>
         </div>
       </div>
     </div>

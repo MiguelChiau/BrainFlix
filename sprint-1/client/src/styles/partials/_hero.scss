@@ -1,5 +1,5 @@
 .hero-background {
-  height: 183px;
+  // height: 183px;
 
   video {
     width: 100%;
@@ -9,6 +9,8 @@
 //JUST TESTING THE CONTROLS
 .controls {
   display: flex;
+  position: relative;
+  bottom: 45px;
   &-play {
     img {
       padding: 5px 15px 5px 20px;
