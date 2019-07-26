@@ -13,6 +13,10 @@
   }
 }
 
+.container {
+  border-bottom: 1px solid $silver;
+}
+
 .container-author {
   display: flex;
   margin-bottom: 32px;
@@ -36,6 +40,7 @@
 
 .container-icons {
   display: flex;
+  margin-bottom: 24px;
   h5 {
     font-family: AvenirRegular;
     font-size: 12px;

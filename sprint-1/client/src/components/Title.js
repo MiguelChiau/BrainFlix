@@ -2,6 +2,7 @@ import React from "react";
 import Views from "../assets/Icons/SVG/Icon-views.svg";
 import Likes from "../assets/Icons/SVG/Icon-likes.svg";
 import Aside from "./Aside.js";
+import Text from "./Text.js";
 
 function Title() {
   return (
@@ -30,7 +31,7 @@ function Title() {
           </div>
         </div>
       </div>
-
+      <Text />
       <Aside />
     </div>
   );

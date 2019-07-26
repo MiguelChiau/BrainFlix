@@ -234,6 +234,10 @@
   margin-top: 32px;
 }
 
+.container {
+  border-bottom: 1px solid #afafaf;
+}
+
 .container-author {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -261,6 +265,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 24px;
 }
 
 .container-icons h5 {
@@ -396,5 +401,23 @@
   font-family: AvenirRegular;
   font-size: 13px;
   line-height: 18px;
+}
+
+.paragraph {
+  margin-top: 24px;
+  font-family: AvenirRegular;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .paragraph {
+    margin-top: 40px;
+    font-family: AvenirRegular;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 64px;
+  }
 }
 /*# sourceMappingURL=app.css.map */
