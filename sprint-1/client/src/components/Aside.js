@@ -14,82 +14,75 @@ function Aside() {
       <h2>NEXT VIDEO</h2>
 
       <div className="video-one">
-        <video poster={Video1} />
+        <video poster={Video1} className="video-next" />
+
         <div>
-          <p className="video-one__title">
+          <p className="video-title">
             Become a Travel Pro In One Easy Lesson...
           </p>
-          <p className="video-one__author">Scotty Cranmer </p>
+          <p className="video-author">Scotty Cranmer </p>
         </div>
       </div>
 
       <div className="video-two">
-        <video poster={Video2} />
+        <video poster={Video2} className="video-next" />
         <div>
-          <p className="video-one__title">
-            Become a Travel Pro In One Easy Lesson...
-          </p>
-          <p className="video-one__author">Scotty Cranmer </p>
+          <p className="video-title">Les Houches The Hidden Gem Of The...</p>
+          <p className="video-author">Scotty Cranmer </p>
         </div>
       </div>
 
       <div className="video-three">
-        <video poster={Video3} />
+        <video poster={Video3} className="video-next" />
         <div>
-          <p className="video-one__title">
-            Become a Travel Pro In One Easy Lesson...
+          <p className="video-title">
+            Travel Health Useful Medical information...
           </p>
-          <p className="video-one__author">Scotty Cranmer </p>
+          <p className="video-author">Scotty Cranmer </p>
         </div>
       </div>
 
       <div className="video-four">
-        <video poster={Video4} />
+        <video poster={Video4} className="video-next" />
         <div>
-          <p className="video-one__title">
-            Become a Travel Pro In One Easy Lesson...
+          <p className="video-title">
+            Cheap Airline Tickets Great Ways To Save
           </p>
-          <p className="video-one__author">Scotty Cranmer </p>
+          <p className="video-author">Emily Harper </p>
         </div>
       </div>
 
       <div className="video-five">
-        <video poster={Video5} />
+        <video poster={Video5} className="video-next" />
         <div>
-          <p className="video-one__title">
-            Become a Travel Pro In One Easy Lesson...
+          <p className="video-title">
+            Take A Romantic Break In A Boutique Hotel
           </p>
-          <p className="video-one__author">Scotty Cranmer </p>
+          <p className="video-author">Ethan Owen </p>
         </div>
       </div>
 
       <div className="video-six">
-        <video poster={Video6} />
+        <video poster={Video6} className="video-next" />
         <div>
-          <p className="video-one__title">
-            Become a Travel Pro In One Easy Lesson...
-          </p>
-          <p className="video-one__author">Scotty Cranmer </p>
+          <p className="video-title">Choose The Perfect Accommodations</p>
+          <p className="video-author">Lydia Perez</p>
         </div>
       </div>
 
       <div className="video-seven">
-        <video poster={Video7} />
+        <video poster={Video7} className="video-next" />
         <div>
-          <p className="video-one__title">
-            Become a Travel Pro In One Easy Lesson...
-          </p>
-          <p className="video-one__author">Scotty Cranmer </p>
+          <p className="video-title">Cruising Destination Ideas</p>
+          <p className="video-author">Timothy Austin</p>
         </div>
       </div>
 
       <div className="video-eight">
-        <video poster={Video8} />
+        <video poster={Video8} className="video-next" />
         <div>
-          <p className="video-one__title">
-            Become a Travel Pro In One Easy Lesson...
-          </p>
-          <p className="video-one__author">Scotty Cranmer </p>
+          <p className="video-title">Train Travel On Track For Safety</p>
+          <p className="video-author">Scotty Cranmer</p>
         </div>
       </div>
     </div>

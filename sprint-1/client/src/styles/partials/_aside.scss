@@ -10,148 +10,39 @@
     font-size: 14px;
     line-height: 22px;
   }
-
-  video {
-    display: block;
-    width: 120px;
-    height: 70px;
-    margin-right: 16px;
-  }
 }
 
-.video-one {
-  display: flex;
-  margin-bottom: 24px;
-  padding-left: 0px;
-
-  &__title {
-    font-family: AvenirDemi;
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 16px;
-  }
-  &__author {
-    font-family: AvenirRegular;
-    font-size: 13px;
-    line-height: 18px;
-  }
+.video-next {
+  display: block;
+  object-fit: fill;
+  width: 120px;
+  height: 70px;
+  margin-right: 16px;
+  border-radius: 5px;
 }
 
-.video-two {
-  display: flex;
-  margin-bottom: 24px;
-
-  &__title {
-    font-family: AvenirDemi;
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 16px;
-  }
-  &__author {
-    font-family: AvenirRegular;
-    font-size: 13px;
-    line-height: 18px;
-  }
-}
-
-.video-three {
-  display: flex;
-  margin-bottom: 24px;
-
-  &__title {
-    font-family: AvenirDemi;
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 16px;
-  }
-  &__author {
-    font-family: AvenirRegular;
-    font-size: 13px;
-    line-height: 18px;
-  }
-}
-
-.video-four {
-  display: flex;
-  margin-bottom: 24px;
-
-  &__title {
-    font-family: AvenirDemi;
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 16px;
-  }
-  &__author {
-    font-family: AvenirRegular;
-    font-size: 13px;
-    line-height: 18px;
-  }
-}
-
-.video-five {
-  display: flex;
-  margin-bottom: 24px;
-
-  &__title {
-    font-family: AvenirDemi;
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 16px;
-  }
-  &__author {
-    font-family: AvenirRegular;
-    font-size: 13px;
-    line-height: 18px;
-  }
-}
-
-.video-six {
-  display: flex;
-  margin-bottom: 24px;
-
-  &__title {
-    font-family: AvenirDemi;
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 16px;
-  }
-  &__author {
-    font-family: AvenirRegular;
-    font-size: 13px;
-    line-height: 18px;
-  }
-}
-
-.video-seven {
-  display: flex;
-  margin-bottom: 24px;
-
-  &__title {
-    font-family: AvenirDemi;
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 16px;
-  }
-  &__author {
-    font-family: AvenirRegular;
-    font-size: 13px;
-    line-height: 18px;
-  }
-}
-
+.video-one,
+.video-two,
+.video-three,
+.video-four,
+.video-five,
+.video-six,
+.video-seven,
 .video-eight {
   display: flex;
   margin-bottom: 24px;
+  padding-left: 0px;
+}
 
-  &__title {
-    font-family: AvenirDemi;
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 16px;
-  }
-  &__author {
-    font-family: AvenirRegular;
-    font-size: 13px;
-    line-height: 18px;
-  }
+.video-title {
+  font-family: AvenirDemi;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
+.video-author {
+  font-family: AvenirRegular;
+  font-size: 13px;
+  line-height: 18px;
 }
