@@ -1,5 +1,5 @@
 import React from "react";
-import Background from "../assets/Images/video-list-0.jpg";
+import Video from "../assets/Images/video-list-0.jpg";
 import Play from "../assets/Icons/PNG/Icon-play.png";
 import Fullscreen from "../assets/Icons/PNG/Icon-fullscreen.png";
 import Volume from "../assets/Icons/PNG/Icon-volume.png";
@@ -7,14 +7,16 @@ import Volume from "../assets/Icons/PNG/Icon-volume.png";
 function Hero() {
   return (
     <div className="hero-background">
-      <video poster={Background} />
+      <video poster={Video} />
 
       <div className="controls">
         <button className="controls-play">
           <img src={Play} alt="" />
         </button>
 
-        <div className="controls-range" />
+        <button className="controls-range">
+          <hr align="center" />
+        </button>
 
         <div className="controls-buttons">
           <button>

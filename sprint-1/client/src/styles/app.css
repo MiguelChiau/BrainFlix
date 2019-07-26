@@ -140,6 +140,10 @@
   }
 }
 
+.hero-background {
+  position: relative;
+}
+
 .hero-background video {
   width: 100%;
 }
@@ -148,8 +152,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  bottom: 45px;
+  position: absolute;
+  bottom: 20px;
+  margin-right: 16px;
+  margin-left: 16px;
 }
 
 .controls-play img {
@@ -159,16 +165,25 @@
 }
 
 .controls-range {
+  border: 2px solid #323232;
   border-radius: 5px;
   background-color: #323232;
   margin-right: 8px;
   margin-left: 8px;
-  width: 60%;
+}
+
+.controls hr {
+  border: 2px solid black;
+  border-radius: 2px;
+  width: 100px;
 }
 
 .controls-buttons {
   background-color: #323232;
   border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .controls-buttons img {
@@ -188,6 +203,10 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
+  }
+  .controls {
+    margin-right: 8px;
+    margin-left: 8px;
   }
 }
 
@@ -212,6 +231,7 @@
   font-size: 24px;
   line-height: 32px;
   margin-bottom: 16px;
+  margin-top: 32px;
 }
 
 .container-author {

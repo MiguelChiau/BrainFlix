@@ -1,16 +1,19 @@
 .hero-background {
-  // height: 183px;
+  position: relative;
 
   video {
     width: 100%;
+    // position: relative;
   }
 }
 
-//JUST TESTING THE CONTROLS
 .controls {
   display: flex;
-  position: relative;
-  bottom: 45px;
+  position: absolute;
+  bottom: 20px;
+  margin-right: 16px;
+  margin-left: 16px;
+
   &-play {
     img {
       padding: 5px 15px 5px 20px;
@@ -20,18 +23,23 @@
   }
 
   &-range {
-    // border-bottom: 2px solid black;
+    border: 2px solid $black;
     border-radius: 5px;
     background-color: $black;
     margin-right: 8px;
     margin-left: 8px;
-
-    width: 60%;
+  }
+  hr {
+    border: 2px solid black;
+    border-radius: 2px;
+    width: 100px;
+    // max-width: 150px;
   }
 
   &-buttons {
     background-color: $black;
     border-radius: 5px;
+    display: flex;
 
     img {
       padding: 5px 15px 5px 20px;
@@ -54,6 +62,11 @@
       margin-right: auto;
       display: block;
     }
+  }
+
+  .controls {
+    margin-right: 8px;
+    margin-left: 8px;
   }
 }
 
