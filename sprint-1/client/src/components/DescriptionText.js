@@ -1,6 +1,6 @@
 import React from "react";
 
-function Text() {
+function DescriptionText() {
   return (
     <div className="paragraph">
       <p>
@@ -16,4 +16,4 @@ function Text() {
   );
 }
 
-export default Text;
+export default DescriptionText;

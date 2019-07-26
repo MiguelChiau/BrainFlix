@@ -124,3 +124,22 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .container-allAndAside {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container-allAndAside {
+    display: flex;
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+
+  .container-all {
+    width: 60%;
+  }
+}

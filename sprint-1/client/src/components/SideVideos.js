@@ -8,7 +8,7 @@ import Video6 from "../assets/Images/video-list-6.jpg";
 import Video7 from "../assets/Images/video-list-7.jpg";
 import Video8 from "../assets/Images/video-list-8.jpg";
 
-function Aside() {
+function SideVideos() {
   return (
     <div className="container-videos">
       <h2>NEXT VIDEO</h2>
@@ -89,4 +89,4 @@ function Aside() {
   );
 }
 
-export default Aside;
+export default SideVideos;
