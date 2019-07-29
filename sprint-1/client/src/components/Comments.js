@@ -11,7 +11,11 @@ function Comments() {
       <div className="container-comment">
         <div className="container-comment__input">
           <label>JOIN THE CONVERSATION</label>
-          <input id="comment" type="text" placeholder="Write comment here" />
+
+          <textarea rows="4" rows="4" cols="50">
+            That was easily the most spectacular BMX moment ever.
+          </textarea>
+
           <button className="container-comment__btn">COMMENT</button>
         </div>
       </div>

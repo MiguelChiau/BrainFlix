@@ -382,16 +382,49 @@ h2 .videosTitle {
 
 .container {
   display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .container-avatar img {
   width: 42px;
   height: 42px;
   border-radius: 50%;
+  margin-right: 16px;
 }
 
-.container-comment {
+label {
   display: block;
+  font-family: AvenirDemi;
+  color: #afafaf;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+.container-comment__input {
+  width: 100%;
+}
+
+textarea {
+  border: 2px solid #0095ff;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.container-comment__btn {
+  background-color: #0095ff;
+  color: #ffffff;
+  font-family: AvenirDemi;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #0095ff;
+  margin-bottom: 24px;
 }
 
 .paragraph {
