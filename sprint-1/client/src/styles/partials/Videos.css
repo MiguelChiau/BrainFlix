@@ -3,17 +3,10 @@
   margin-left: 16px;
 }
 
-// h2 .videosTitle {
-//   font-family: AvenirDemi;
-//   color: $silver;
-//   margin-top: 40px;
-//   margin-bottom: 40px;
-//   font-size: 14px;
-//   line-height: 22px;
-// }
 .video-next {
   display: block;
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
   width: 120px;
   height: 70px;
   margin-right: 16px;
@@ -28,6 +21,8 @@
 .video-six,
 .video-seven,
 .video-eight {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 24px;
   padding-left: 0px;
@@ -45,3 +40,4 @@
   font-size: 13px;
   line-height: 18px;
 }
+/*# sourceMappingURL=Videos.css.map */

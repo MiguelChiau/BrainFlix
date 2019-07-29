@@ -371,18 +371,50 @@
   }
 }
 
-.container-videos {
-  margin-right: 16px;
-  margin-left: 16px;
-}
-
-.container-videos h2 {
+h2 .videosTitle {
   font-family: AvenirDemi;
   color: #afafaf;
   margin-top: 40px;
   margin-bottom: 40px;
   font-size: 14px;
   line-height: 22px;
+}
+
+.container {
+  display: block;
+}
+
+.container-avatar img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.container-comment {
+  display: block;
+}
+
+.paragraph {
+  margin-top: 24px;
+  font-family: AvenirRegular;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .paragraph {
+    margin-top: 40px;
+    font-family: AvenirRegular;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 64px;
+  }
+}
+
+.container-videos {
+  margin-right: 16px;
+  margin-left: 16px;
 }
 
 .video-next {
@@ -421,23 +453,5 @@
   font-family: AvenirRegular;
   font-size: 13px;
   line-height: 18px;
-}
-
-.paragraph {
-  margin-top: 24px;
-  font-family: AvenirRegular;
-  font-size: 13px;
-  line-height: 18px;
-  margin-bottom: 40px;
-}
-
-@media screen and (min-width: 768px) {
-  .paragraph {
-    margin-top: 40px;
-    font-family: AvenirRegular;
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 64px;
-  }
 }
 /*# sourceMappingURL=app.css.map */

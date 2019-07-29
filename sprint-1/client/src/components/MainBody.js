@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Views from "../assets/Icons/SVG/Icon-views.svg";
 import Likes from "../assets/Icons/SVG/Icon-likes.svg";
-// import SideVideos from "./Videos.js/index.js";
 import Videos from "./Videos.js";
+import Comments from "./Comments";
 
 import DescriptionText from "./DescriptionText.js";
 
@@ -92,7 +92,7 @@ export default class MainBody extends Component {
       <div className="container-allAndAside ">
         <div className="container-all">
           <div className="container">
-            <div>{/* <h1>{state.mainVideo.title}</h1> */}</div>
+            <div>{/* <h1>{this.state.mainVideo.title}</h1> */}</div>
 
             <div className="container-authorAndIcons">
               <div className="container-author">
@@ -114,8 +114,12 @@ export default class MainBody extends Component {
             </div>
           </div>
           <DescriptionText />
+          <Comments />
         </div>
-        <Videos videos={this.state.videos} />
+        <div>
+          <h2 className="videosTitle">NEXT VIDEO</h2>
+          <Videos videos={this.state.videos} />
+        </div>
       </div>
     );
   }

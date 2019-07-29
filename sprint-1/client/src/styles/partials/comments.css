@@ -1,0 +1,14 @@
+.container {
+  display: block;
+}
+
+.container-avatar img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.container-comment {
+  display: block;
+}
+/*# sourceMappingURL=comments.css.map */
