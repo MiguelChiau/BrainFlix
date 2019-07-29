@@ -1,6 +1,5 @@
 // Mobile first
 .container {
-  // display: block;
   display: flex;
 
   &-avatar {
@@ -52,6 +51,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .container {
     display: flex;
+    align-items: center;
   }
 
   label {
@@ -62,8 +62,6 @@ textarea {
   }
 
   .container-comment__input {
-    // width: 440px;
-    // margin-right: 16px;
     display: flex;
     margin-bottom: 0px;
   }
@@ -72,10 +70,11 @@ textarea {
     width: 160px;
     margin-right: 40px;
     margin-left: 16px;
-    height: 64px;
+    // align-items: flex-end;
   }
   textarea {
     width: 440px;
+    height: 48px;
   }
 }
 

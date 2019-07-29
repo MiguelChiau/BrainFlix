@@ -30,10 +30,7 @@ export default class MainBody extends Component {
       // video: "type of <string>",
       timestamp: "12/18/2018"
       // comments: "type of <array>"
-    }
-  };
-
-  state = {
+    },
     videos: [
       {
         id: "video-1",
@@ -84,7 +81,8 @@ export default class MainBody extends Component {
         channel: "Scotty Cranmer",
         image: Video8
       }
-    ]
+    ],
+    comments: []
   };
 
   render() {
@@ -92,29 +90,31 @@ export default class MainBody extends Component {
       <div className="container-allAndAside ">
         <div className="container-all">
           <div className="container">
-            <div>{/* <h1>{this.state.mainVideo.title}</h1> */}</div>
+            <div>
+              <h1>{this.state.mainVideo.title}</h1>
+            </div>
 
             <div className="container-authorAndIcons">
               <div className="container-author">
-                {/* <h2>{this.state.mainVideo.channel}</h2> */}
-                {/* <h5>{this.state.mainVideo.timestamp}</h5> */}
+                <h2>{this.state.mainVideo.channel}</h2>
+                <h5>{this.state.mainVideo.timestamp}</h5>
               </div>
 
               <div className="container-icons">
                 <div className="container-icons__views">
                   <img src={Views} alt="" />
-                  {/* <h5>{this.state.mainVideo.views}</h5> */}
+                  <h5>{this.state.mainVideo.views}</h5>
                 </div>
 
                 <div className="container-icons__likes">
                   <img src={Likes} alt="" />
-                  {/* <h5>{this.state.mainVideo.likes}</h5> */}
+                  <h5>{this.state.mainVideo.likes}</h5>
                 </div>
               </div>
             </div>
           </div>
           <DescriptionText />
-          <Comments />
+          {/* <Comments comments={this.state.comments} /> */}
         </div>
         <div>
           <h2 className="videosTitle">NEXT VIDEO</h2>

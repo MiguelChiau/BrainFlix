@@ -225,6 +225,7 @@
   margin-left: 16px;
   display: block;
   font-family: AvenirBold;
+  display: block;
 }
 
 .container-all h1 {
@@ -236,6 +237,11 @@
 
 .container {
   border-bottom: 1px solid #afafaf;
+  display: block;
+}
+
+.container-authorAndIcons {
+  display: block;
 }
 
 .container-author {
@@ -431,6 +437,9 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   label {
     display: block;
@@ -450,10 +459,10 @@ textarea {
     width: 160px;
     margin-right: 40px;
     margin-left: 16px;
-    height: 64px;
   }
   textarea {
     width: 440px;
+    height: 48px;
   }
 }
 
