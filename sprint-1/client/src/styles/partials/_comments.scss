@@ -1,14 +1,15 @@
+// Mobile first
 .container {
-  display: block;
+  // display: block;
   display: flex;
-}
 
-.container-avatar {
-  img {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    margin-right: 16px;
+  &-avatar {
+    img {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      margin-right: 16px;
+    }
   }
 }
 
@@ -21,26 +22,85 @@ label {
   margin-bottom: 10px;
 }
 
-.container-comment__input {
-  width: 100%;
-}
-
 textarea {
   border: 2px solid $brainflix-blue;
   width: 100%;
   margin-bottom: 16px;
 }
 
-.container-comment__btn {
-  background-color: $brainflix-blue;
-  color: $white;
-  font-family: AvenirDemi;
-  font-size: 12px;
-  line-height: 20px;
-  padding: 10px 10px;
-  border-radius: 5px;
-  width: 100%;
-  text-align: center;
-  border: 1px solid $brainflix-blue;
-  margin-bottom: 24px;
+.container-comment {
+  &__input {
+    width: 100%;
+  }
+
+  &__btn {
+    background-color: $brainflix-blue;
+    color: $white;
+    font-family: AvenirDemi;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid $brainflix-blue;
+    margin-bottom: 24px;
+  }
+}
+
+//Tablet
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+
+  label {
+    display: block;
+  }
+  .container-comment {
+    display: flex;
+  }
+
+  .container-comment__input {
+    // width: 440px;
+    // margin-right: 16px;
+    display: flex;
+    margin-bottom: 0px;
+  }
+
+  .container-comment__btn {
+    width: 160px;
+    margin-right: 40px;
+    margin-left: 16px;
+    height: 64px;
+  }
+  textarea {
+    width: 440px;
+  }
+}
+
+//Desktop
+@media screen and (min-width: 1440px) {
+  .container {
+    display: flex;
+  }
+
+  label {
+    display: block;
+  }
+
+  .container-comment__input {
+    width: 436px;
+    margin-right: 16px;
+    display: flex;
+  }
+
+  .container-comment__btn {
+    width: 160px;
+    margin-right: 40px;
+    margin-left: 16px;
+  }
+  textarea {
+    width: 440px;
+  }
 }

@@ -381,7 +381,6 @@ h2 .videosTitle {
 }
 
 .container {
-  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -403,14 +402,14 @@ label {
   margin-bottom: 10px;
 }
 
-.container-comment__input {
-  width: 100%;
-}
-
 textarea {
   border: 2px solid #0095ff;
   width: 100%;
   margin-bottom: 16px;
+}
+
+.container-comment__input {
+  width: 100%;
 }
 
 .container-comment__btn {
@@ -425,6 +424,63 @@ textarea {
   text-align: center;
   border: 1px solid #0095ff;
   margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  label {
+    display: block;
+  }
+  .container-comment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container-comment__input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0px;
+  }
+  .container-comment__btn {
+    width: 160px;
+    margin-right: 40px;
+    margin-left: 16px;
+    height: 64px;
+  }
+  textarea {
+    width: 440px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  label {
+    display: block;
+  }
+  .container-comment__input {
+    width: 436px;
+    margin-right: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container-comment__btn {
+    width: 160px;
+    margin-right: 40px;
+    margin-left: 16px;
+  }
+  textarea {
+    width: 440px;
+  }
 }
 
 .paragraph {
