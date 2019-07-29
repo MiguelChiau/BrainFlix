@@ -140,7 +140,7 @@ export default class MainBody extends Component {
             </div>
           </div>
           <DescriptionText />
-          <div className="container">
+          <div className="container-">
             <div className="container-avatar">
               <img src={Avatar} alt="" />
             </div>

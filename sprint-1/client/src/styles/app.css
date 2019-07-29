@@ -510,20 +510,41 @@ textarea {
 .container {
   display: block;
   font-family: AvenirRegular;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 .container-nameAndTimestamp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .container-nameAndTimestamp__name {
   font-family: AvenirDemi;
+  margin-bottom: 16px;
 }
 
 .container-nameAndTimestamp__timestamp {
   color: #afafaf;
+}
+
+.container-nameAndTimestamp__comments {
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-nameAndTimestamp {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .container-nameAndTimestamp__name {
+    margin-right: 20px;
+  }
 }
 
 .paragraph {

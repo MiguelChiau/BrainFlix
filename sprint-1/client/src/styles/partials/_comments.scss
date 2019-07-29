@@ -122,16 +122,33 @@ textarea {
 .container {
   display: block;
   font-family: AvenirRegular;
+  font-size: 13px;
+  line-height: 18px;
+
+  &-nameAndTimestamp {
+    display: flex;
+    justify-content: space-between;
+
+    &__name {
+      font-family: AvenirDemi;
+      margin-bottom: 16px;
+    }
+    &__timestamp {
+      color: $silver;
+    }
+
+    &__comments {
+      margin-bottom: 24px;
+    }
+  }
 }
 
-.container-nameAndTimestamp {
-  display: flex;
-}
+@media screen and (min-width: 768px) {
+  .container-nameAndTimestamp {
+    justify-content: flex-start;
 
-.container-nameAndTimestamp__name {
-  font-family: AvenirDemi;
-}
-
-.container-nameAndTimestamp__timestamp {
-  color: $silver;
+    &__name {
+      margin-right: 20px;
+    }
+  }
 }
