@@ -1,31 +1,31 @@
 import React from "react";
-import Avatar from "../assets/Images/Mohan-muruge.jpg";
-import AddComment from "./AddComment";
 
-function Comments() {
-  return (
-    <div>
-      <div className="container">
-        <div className="container-avatar">
-          <img src={Avatar} alt="" />
+const Comments = props => {
+  const { comments } = props;
+  const commentList = comments.map(comment => {
+    return (
+      <div className="allComments" key={comment.id}>
+        <div className="allComments-image">
+          <img src />
         </div>
-        <div className="container-comment">
-          <div className="container-comment__input">
-            <div className="container-comment__title">
-              <label>JOIN THE CONVERSATION</label>
 
-              <textarea rows="4" rows="4" cols="50">
-                That was easily the most spectacular BMX moment ever.
-              </textarea>
+        <div className="container">
+          <div className="container-nameAndTimestamp">
+            <div className="container-nameAndTimestamp__name">
+              {comment.name}
             </div>
-
-            <button className="container-comment__btn">COMMENT</button>
+            <div className="container-nameAndTimestamp__timestamp">
+              {comment.timestamp}
+            </div>
+          </div>
+          <div className="container-nameAndTimestamp__comments">
+            {comment.comment}
           </div>
         </div>
       </div>
-      {/* <AddComment /> */}
-    </div>
-  );
-}
+    );
+  });
+  return <div>{commentList}</div>;
+};
 
 export default Comments;
