@@ -1,4 +1,5 @@
 import React from "react";
+import Avatar from "../assets/Images/avatar.png";
 
 const Comments = props => {
   const { comments } = props;
@@ -6,7 +7,7 @@ const Comments = props => {
     return (
       <div className="allComments" key={comment.id}>
         <div className="allComments-image">
-          <img src />
+          <img src={Avatar} />
         </div>
 
         <div className="container">

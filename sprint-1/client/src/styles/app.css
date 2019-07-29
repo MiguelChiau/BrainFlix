@@ -492,6 +492,40 @@ textarea {
   }
 }
 
+.allComments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+.allComments-image img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.container {
+  display: block;
+  font-family: AvenirRegular;
+}
+
+.container-nameAndTimestamp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-nameAndTimestamp__name {
+  font-family: AvenirDemi;
+}
+
+.container-nameAndTimestamp__timestamp {
+  color: #afafaf;
+}
+
 .paragraph {
   margin-top: 24px;
   font-family: AvenirRegular;
