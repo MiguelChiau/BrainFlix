@@ -23,30 +23,33 @@ export default class AddComment extends Component {
 
   render() {
     return (
-      <form className="container" onSubmit={this.handleSubmit}>
-        <div className="container-avatar">
-          <img src={Avatar} alt="" />
-        </div>
-        <div className="container-comment">
-          <div className="container-comment__input">
-            <div className="container-comment__title">
-              <label>JOIN THE CONVERSATION</label>
-
-              <textarea
-                rows="4"
-                rows="4"
-                cols="50"
-                onChange={this.handleChange}
-                name="comment"
-              >
-                That was easily the most spectacular BMX moment ever.
-              </textarea>
-            </div>
-
-            <button className="container-comment__btn">COMMENT</button>
+      <div className="container-All">
+        <form className="container" onSubmit={this.handleSubmit}>
+          <div className="container-avatar">
+            <img src={Avatar} alt="" />
           </div>
-        </div>
-      </form>
+
+          <div className="container-comment">
+            <div className="container-comment__input">
+              <div className="container-comment__title">
+                <label>JOIN THE CONVERSATION</label>
+
+                <textarea
+                  rows="4"
+                  rows="4"
+                  cols="50"
+                  onChange={this.handleChange}
+                  name="comment"
+                  placeholder="That was easily the most spectacular BMX moment ever."
+                />
+              </div>
+              <div>
+                <button className="container-comment__btn">COMMENT</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
     );
   }
 }

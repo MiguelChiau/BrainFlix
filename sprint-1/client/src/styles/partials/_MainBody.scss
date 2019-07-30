@@ -11,15 +11,16 @@
     line-height: 32px;
     margin-bottom: 16px;
     margin-top: 32px;
+    font-family: AvenirBold;
   }
 }
 
 .container {
-  border-bottom: 1px solid $silver;
   display: block;
 }
 .container-authorAndIcons {
   display: block;
+  border-bottom: 1px solid $silver;
 }
 
 .container-author {
@@ -46,6 +47,7 @@
 .container-icons {
   display: flex;
   margin-bottom: 24px;
+
   h5 {
     font-family: AvenirRegular;
     font-size: 12px;
@@ -130,6 +132,16 @@
   }
 }
 
+.videosTitle {
+  font-family: AvenirDemi;
+  color: $silver;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 16px;
+}
+
 @media screen and (min-width: 768px) {
   .container-allAndAside {
     margin-left: 24px;
@@ -147,13 +159,4 @@
   .container-all {
     width: 60%;
   }
-}
-
-h2 .videosTitle {
-  font-family: AvenirDemi;
-  color: $silver;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  font-size: 14px;
-  line-height: 22px;
 }

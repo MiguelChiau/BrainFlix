@@ -114,16 +114,23 @@ export default class MainBody extends Component {
 
   addComment = comment => {
     console.log(comment);
+
     const newComment = {
       id: "4",
       name: "Miguel",
-      timestamp: "12/15/2019",
+      timestamp: "date",
       comment: comment
     };
     let comments = this.state.comments.concat(newComment);
     this.setState({
       comments: comments
     });
+
+    // let date =
+    //   date.getMonth() + 1 + "/" + date.getDate() + "/" + date.getFullYear();
+    // this.setState({
+    //   date: date
+    // });
   };
 
   render() {

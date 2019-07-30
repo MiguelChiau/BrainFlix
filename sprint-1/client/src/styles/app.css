@@ -233,15 +233,16 @@
   line-height: 32px;
   margin-bottom: 16px;
   margin-top: 32px;
+  font-family: AvenirBold;
 }
 
 .container {
-  border-bottom: 1px solid #afafaf;
   display: block;
 }
 
 .container-authorAndIcons {
   display: block;
+  border-bottom: 1px solid #afafaf;
 }
 
 .container-author {
@@ -357,6 +358,16 @@
   }
 }
 
+.videosTitle {
+  font-family: AvenirDemi;
+  color: #afafaf;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 16px;
+}
+
 @media screen and (min-width: 768px) {
   .container-allAndAside {
     margin-left: 24px;
@@ -377,15 +388,6 @@
   }
 }
 
-h2 .videosTitle {
-  font-family: AvenirDemi;
-  color: #afafaf;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  font-size: 14px;
-  line-height: 22px;
-}
-
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,6 +399,15 @@ h2 .videosTitle {
   height: 42px;
   border-radius: 50%;
   margin-right: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-All {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 label {
@@ -411,11 +422,11 @@ label {
 textarea {
   border: 2px solid #0095ff;
   width: 100%;
-  margin-bottom: 16px;
 }
 
 .container-comment__input {
   width: 100%;
+  border-bottom: 1px solid #afafaf;
 }
 
 .container-comment__btn {
@@ -429,6 +440,11 @@ textarea {
   width: 100%;
   text-align: center;
   border: 1px solid #0095ff;
+  margin-top: 29px;
+  height: 48px;
+}
+
+.container-comment__btn {
   margin-bottom: 24px;
 }
 
@@ -483,7 +499,7 @@ textarea {
     display: flex;
   }
   .container-comment__btn {
-    width: 160px;
+    width: 100%;
     margin-right: 40px;
     margin-left: 16px;
   }
@@ -498,6 +514,7 @@ textarea {
   display: flex;
   margin-bottom: 24px;
   margin-top: 24px;
+  border-bottom: 1px solid #afafaf;
 }
 
 .allComments-image img {
