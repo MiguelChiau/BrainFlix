@@ -3,6 +3,7 @@ import Views from "../assets/Icons/SVG/Icon-views.svg";
 import Likes from "../assets/Icons/SVG/Icon-likes.svg";
 import Videos from "./Videos.js";
 import Comments from "./Comments";
+import AddComment from "./AddComment";
 
 import Avatar from "../assets/Images/Mohan-muruge.jpg";
 
@@ -111,6 +112,20 @@ export default class MainBody extends Component {
     ]
   };
 
+  addComment = comment => {
+    console.log(comment);
+    const newComment = {
+      id: "4",
+      name: "Miguel",
+      timestamp: "12/15/2019",
+      comment: comment
+    };
+    let comments = this.state.comments.concat(newComment);
+    this.setState({
+      comments: comments
+    });
+  };
+
   render() {
     return (
       <div className="container-allAndAside ">
@@ -140,25 +155,7 @@ export default class MainBody extends Component {
             </div>
           </div>
           <DescriptionText />
-          <div className="container-">
-            <div className="container-avatar">
-              <img src={Avatar} alt="" />
-            </div>
-            <div className="container-comment">
-              <div className="container-comment__input">
-                <div className="container-comment__title">
-                  <label>JOIN THE CONVERSATION</label>
-
-                  <textarea rows="4" rows="4" cols="50">
-                    That was easily the most spectacular BMX moment ever.
-                  </textarea>
-                </div>
-
-                <button className="container-comment__btn">COMMENT</button>
-              </div>
-            </div>
-          </div>
-
+          <AddComment addComment={this.addComment} />
           <Comments comments={this.state.comments} />
         </div>
         <div>
