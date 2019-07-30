@@ -13,7 +13,11 @@
   }
 }
 .container-All {
-  display: flex;
+  display: block;
+}
+.container-title {
+  margin-bottom: 32px;
+  font-family: AvenirDemi;
 }
 
 label {

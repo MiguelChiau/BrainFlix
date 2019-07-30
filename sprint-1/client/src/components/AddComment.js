@@ -24,6 +24,7 @@ export default class AddComment extends Component {
   render() {
     return (
       <div className="container-All">
+        <p className="container-title">3 Comments</p>
         <form className="container" onSubmit={this.handleSubmit}>
           <div className="container-avatar">
             <img src={Avatar} alt="" />
