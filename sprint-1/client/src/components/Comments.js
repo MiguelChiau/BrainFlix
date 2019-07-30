@@ -28,7 +28,6 @@ const Comments = props => {
   });
   return <div>{commentList}</div>;
 
-  console.log(Comments.length);
 };
 
 export default Comments;
