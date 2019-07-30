@@ -1,0 +1,47 @@
+.container-videos {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+// h2 .videosTitle {
+//   font-family: AvenirDemi;
+//   color: $silver;
+//   margin-top: 40px;
+//   margin-bottom: 40px;
+//   font-size: 14px;
+//   line-height: 22px;
+// }
+.video-next {
+  display: block;
+  object-fit: fill;
+  width: 120px;
+  height: 70px;
+  margin-right: 16px;
+  border-radius: 5px;
+}
+
+.video-one,
+.video-two,
+.video-three,
+.video-four,
+.video-five,
+.video-six,
+.video-seven,
+.video-eight {
+  display: flex;
+  margin-bottom: 24px;
+  padding-left: 0px;
+}
+
+.video-title {
+  font-family: AvenirDemi;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
+.video-author {
+  font-family: AvenirRegular;
+  font-size: 13px;
+  line-height: 18px;
+}
