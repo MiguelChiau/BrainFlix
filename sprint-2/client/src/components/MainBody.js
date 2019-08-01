@@ -12,19 +12,7 @@ import DescriptionText from "./DescriptionText.js";
 
 export default class MainBody extends Component {
   state = {
-    mainVideo: {
-      id: "mainVideo",
-      title: "BMX Rampage: 2018 Highlights",
-      description: DescriptionText,
-      channel: "By Red Cow",
-      // image: "type of <string>",
-      views: "1, 001, 023",
-      likes: "110,985",
-      // duration: "type of <string>",
-      // video: "type of <string>",
-      timestamp: "12/18/2018"
-      // comments: "type of <array>"
-    },
+    mainVideo: {},
     videos: []
   };
 
@@ -49,11 +37,26 @@ export default class MainBody extends Component {
     // });
   };
 
+  // componentDidMount() {
+
   componentDidMount() {
+    //API request for the main video details
+    const myKey = "d9ee6782-fc1c-4908-9ee6-d878e091f619";
+    const id = "1af0jruup5gu";
     axios
       .get(
-        `https://project-2-api.herokuapp.com/videos?api_key=d9ee6782-fc1c-4908-9ee6-d878e091f619`
+        `https://project-2-api.herokuapp.com/videos/1af0jruup5gu?api_key=${myKey}`
       )
+      .then(response => {
+        console.log("test", response.data);
+        this.setState({
+          mainVideo: response.data
+        });
+      });
+
+    // API GET request for the next videos section
+    axios
+      .get(`https://project-2-api.herokuapp.com/videos?api_key=${myKey}`)
       .then(response => {
         this.setState({
           videos: response.data
