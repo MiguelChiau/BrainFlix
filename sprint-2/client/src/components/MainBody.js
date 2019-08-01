@@ -3,16 +3,18 @@ import Views from "../assets/Icons/SVG/Icon-views.svg";
 import Likes from "../assets/Icons/SVG/Icon-likes.svg";
 import Videos from "./Videos.js";
 import Comments from "./Comments";
-import AddComment from "./AddComment";
+// import AddComment from "./AddComment";
 import axios from "axios";
 
 import Avatar from "../assets/Images/Mohan-muruge.jpg";
 
-import DescriptionText from "./DescriptionText.js";
+// import DescriptionText from "./DescriptionText.js";
 
 export default class MainBody extends Component {
   state = {
-    mainVideo: {},
+    mainVideo: {
+      comments: []
+    },
     videos: []
   };
 
@@ -92,9 +94,11 @@ export default class MainBody extends Component {
               </div>
             </div>
           </div>
-          <DescriptionText />
+          <p className="description-paragraph">
+            {this.state.mainVideo.description}
+          </p>
           {/* <AddComment addComment={this.addComment} /> */}
-          {/* <Comments comments={this.state.comments} /> */}
+          <Comments comments={this.state.mainVideo.comments} />
         </div>
         <div>
           <h2 className="videosTitle">NEXT VIDEO</h2>

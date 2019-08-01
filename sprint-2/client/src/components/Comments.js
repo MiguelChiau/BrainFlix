@@ -3,6 +3,8 @@ import Avatar from "../assets/Images/avatar.png";
 
 const Comments = props => {
   const { comments } = props;
+  console.log(props);
+
   const commentList = comments.map(comment => {
     return (
       <div className="allComments" key={comment.id}>
@@ -27,7 +29,6 @@ const Comments = props => {
     );
   });
   return <div>{commentList}</div>;
-
 };
 
 export default Comments;

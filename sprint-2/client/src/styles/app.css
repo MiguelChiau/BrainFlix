@@ -580,7 +580,7 @@ textarea {
   }
 }
 
-.paragraph {
+.description-paragraph {
   margin-top: 24px;
   font-family: AvenirRegular;
   font-size: 13px;
@@ -589,7 +589,7 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
-  .paragraph {
+  .description-paragraph {
     margin-top: 40px;
     font-family: AvenirRegular;
     font-size: 14px;
