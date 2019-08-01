@@ -5,6 +5,11 @@ const Comments = props => {
   const { comments } = props;
   console.log(props);
 
+  // This will convet the epoch timestamp into human readable date
+  const date = date => {
+    return new Date(date).toLocaleDateString();
+  };
+
   const commentList = comments.map(comment => {
     return (
       <div className="allComments" key={comment.id}>
@@ -18,7 +23,7 @@ const Comments = props => {
               {comment.name}
             </div>
             <div className="container-nameAndTimestamp__timestamp">
-              {comment.timestamp}
+              {date(comment.timestamp)}
             </div>
           </div>
           <div className="container-nameAndTimestamp__comments">

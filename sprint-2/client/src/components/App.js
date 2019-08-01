@@ -13,12 +13,13 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        {/* <Header /> */}
+
         <Switch>
           <Route path="/" exact component={Header} />
-        </Switch>
-        <Switch>
           <Route path="/upload" component={Upload} />
         </Switch>
+
         <Hero />
         <MainBody />
       </div>

@@ -10,6 +10,11 @@ import Avatar from "../assets/Images/Mohan-muruge.jpg";
 
 // import DescriptionText from "./DescriptionText.js";
 
+// This will convert the epoch timestamp into human readable date
+const date = date => {
+  return new Date(date).toLocaleDateString();
+};
+
 export default class MainBody extends Component {
   state = {
     mainVideo: {
@@ -78,7 +83,7 @@ export default class MainBody extends Component {
             <div className="container-authorAndIcons">
               <div className="container-author">
                 <h2>{this.state.mainVideo.channel}</h2>
-                <h5>{this.state.mainVideo.timestamp}</h5>
+                <h5>{date(this.state.mainVideo.timestamp)}</h5>
               </div>
 
               <div className="container-icons">
