@@ -15,16 +15,16 @@ function Upload() {
 
       <form className="form">
         <div className="container-form">
-          <div className="container-form__addTitle">TITLE YOU VIDEO</div>
+          <p className="container-form__addTitle">TITLE YOU VIDEO</p>
           <input
             type="text"
             name="videotitle"
             placeholder="Add a title to your video"
             className="container-form__add"
           />
-          <div className="container-form__addDescription">
+          <p className="container-form__addDescription">
             ADD A VIDEO DESCRIPTION
-          </div>
+          </p>
 
           <textarea placeholder="Add a descriptions of your video" />
 
