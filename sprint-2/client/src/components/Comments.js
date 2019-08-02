@@ -5,8 +5,8 @@ const Comments = props => {
   const { comments } = props;
   console.log(props);
 
-  // This will convet the epoch timestamp into human readable date
-  const date = date => {
+  // This will convert the epoch timestamp into human readable date
+  const convertDate = date => {
     return new Date(date).toLocaleDateString();
   };
 
@@ -23,7 +23,7 @@ const Comments = props => {
               {comment.name}
             </div>
             <div className="container-nameAndTimestamp__timestamp">
-              {date(comment.timestamp)}
+              {convertDate(comment.timestamp)}
             </div>
           </div>
           <div className="container-nameAndTimestamp__comments">

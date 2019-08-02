@@ -13,7 +13,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {/* <Header /> */}
+        <Header />
 
         <Switch>
           <Route path="/" exact component={Header} />

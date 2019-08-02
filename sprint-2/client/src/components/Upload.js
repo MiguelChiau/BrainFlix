@@ -7,28 +7,32 @@ import image from "../assets/Images/Upload-video-preview.jpg";
 function Upload() {
   return (
     <div className="container">
-      <Header />
+      {/* <Header /> */}
 
       <h1 className="container-title">Upload Video</h1>
       <h5 className="container-label">VIDEO THUMBNAIL</h5>
       <img src={image} className="container-thumbnail" />
 
       <form className="form">
-        <div>TITLE YOU VIDEO</div>
+        <div className="container-form">
+          <div className="container-form__addTitle">TITLE YOU VIDEO</div>
+          <input
+            type="text"
+            name="videotitle"
+            placeholder="Add a title to your video"
+            className="container-form__add"
+          />
+          <div className="container-form__addDescription">
+            ADD A VIDEO DESCRIPTION
+          </div>
 
-        <input
-          type="text"
-          name="videotitle"
-          placeholder="Add a title to your video"
-        />
-        <div>ADD A VIDEO DESCRIPTION</div>
+          <textarea placeholder="Add a descriptions of your video" />
 
-        <input
-          type="text"
-          name="videodescription"
-          placeholder="Add a descriptions of your video"
-        />
-        <input type="submit" value="PUBLISH" />
+          <div className="container-form__inputs">
+            <button className="container-form__publish">PUBLISH</button>
+            <p className="container-form__cancel">CANCEL</p>
+          </div>
+        </div>
       </form>
     </div>
   );

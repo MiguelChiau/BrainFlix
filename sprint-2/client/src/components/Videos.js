@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+//We need to get the id for each image being clicked
 
 const Videos = props => {
   const { videos } = props;
@@ -6,8 +9,11 @@ const Videos = props => {
   const videoList = videos.map(video => {
     return (
       <div className="container-videos">
-        <div className="video-one" key={video.id}>
-          <img src={video.image} className="video-next" />
+        <div className="video-one" id={video.id}>
+          <Link to={`/videos/${video.id}`}>
+            <img src={video.image} className="video-next" />
+          </Link>
+
           <div>
             <p className="video-title">{video.title}</p>
             <p className="video-author">{video.channel}</p>

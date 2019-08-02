@@ -5,13 +5,12 @@ import Videos from "./Videos.js";
 import Comments from "./Comments";
 // import AddComment from "./AddComment";
 import axios from "axios";
+import { Route, Switch } from "react-router-dom";
 
 import Avatar from "../assets/Images/Mohan-muruge.jpg";
 
-// import DescriptionText from "./DescriptionText.js";
-
 // This will convert the epoch timestamp into human readable date
-const date = date => {
+const convertDate = date => {
   return new Date(date).toLocaleDateString();
 };
 
@@ -23,39 +22,13 @@ export default class MainBody extends Component {
     videos: []
   };
 
-  addComment = comment => {
-    console.log(comment);
-
-    const newComment = {
-      id: "4",
-      name: "Miguel",
-      timestamp: "date",
-      comment: comment
-    };
-    let comments = this.state.comments.concat(newComment);
-    this.setState({
-      comments: comments
-    });
-
-    // let date =
-    //   date.getMonth() + 1 + "/" + date.getDate() + "/" + date.getFullYear();
-    // this.setState({
-    //   date: date
-    // });
-  };
-
-  // componentDidMount() {
-
   componentDidMount() {
     //API request for the main video details
     const myKey = "d9ee6782-fc1c-4908-9ee6-d878e091f619";
-    const id = "1af0jruup5gu";
+    const id = "1a8qhruuzky3";
     axios
-      .get(
-        `https://project-2-api.herokuapp.com/videos/1af0jruup5gu?api_key=${myKey}`
-      )
+      .get(`https://project-2-api.herokuapp.com/videos/${id}?api_key=${myKey}`)
       .then(response => {
-        console.log("test", response.data);
         this.setState({
           mainVideo: response.data
         });
@@ -83,7 +56,7 @@ export default class MainBody extends Component {
             <div className="container-authorAndIcons">
               <div className="container-author">
                 <h2>{this.state.mainVideo.channel}</h2>
-                <h5>{date(this.state.mainVideo.timestamp)}</h5>
+                <h5>{convertDate(this.state.mainVideo.timestamp)}</h5>
               </div>
 
               <div className="container-icons">
@@ -102,6 +75,7 @@ export default class MainBody extends Component {
           <p className="description-paragraph">
             {this.state.mainVideo.description}
           </p>
+
           {/* <AddComment addComment={this.addComment} /> */}
           <Comments comments={this.state.mainVideo.comments} />
         </div>

@@ -652,6 +652,7 @@ textarea {
   line-height: 32px;
   margin-top: 24px;
   margin-bottom: 32px;
+  border-top: 1px solid #afafaf;
 }
 
 .container-thumbnail {
@@ -668,5 +669,58 @@ textarea {
 
 .form {
   display: block;
+}
+
+.container-form__addTitle {
+  color: #afafaf;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 32px;
+  font-family: AvenirDemi;
+}
+
+.container-form__add {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #afafaf;
+  border-radius: 5px;
+  background-color: #fafafa;
+  margin-bottom: 24px;
+}
+
+.container-form__addDescription {
+  font-family: AvenirDemi;
+  font-size: 12px;
+  line-height: 20px;
+  color: #afafaf;
+}
+
+textarea {
+  height: 143px;
+  border: 1px solid #afafaf;
+  border-radius: 5px;
+  background-color: #fafafa;
+  margin-bottom: 32px;
+}
+
+.container-form__publish {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 24px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #0095ff;
+  font-family: AvenirDemi;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.container-form__cancel {
+  color: #0095ff;
+  font-family: AvenirDemi;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
 }
 /*# sourceMappingURL=app.css.map */
