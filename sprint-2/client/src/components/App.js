@@ -16,12 +16,20 @@ class App extends React.Component {
         <Header />
 
         <Switch>
-          <Route path="/" exact component={Header} />
+          <Route path="/" exact component={Hero} />
           <Route path="/upload" component={Upload} />
+          <Route
+            path="/videos/:id"
+            component={MainBody}
+            // render={props => {
+            //   console.log(props);
+            //   // MainBody(props);
+            // }}
+          />
         </Switch>
 
-        <Hero />
-        <MainBody />
+        {/* <Hero /> */}
+        {/* <MainBody /> */}
       </div>
     );
   }

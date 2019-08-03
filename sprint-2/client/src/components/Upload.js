@@ -26,7 +26,10 @@ function Upload() {
             ADD A VIDEO DESCRIPTION
           </p>
 
-          <textarea placeholder="Add a descriptions of your video" />
+          <textarea
+            placeholder="Add a descriptions of your video"
+            className="container-form__textarea"
+          />
 
           <div className="container-form__inputs">
             <button className="container-form__publish">PUBLISH</button>

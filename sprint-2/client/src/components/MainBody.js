@@ -3,7 +3,7 @@ import Views from "../assets/Icons/SVG/Icon-views.svg";
 import Likes from "../assets/Icons/SVG/Icon-likes.svg";
 import Videos from "./Videos.js";
 import Comments from "./Comments";
-// import AddComment from "./AddComment";
+import AddComment from "./AddComment";
 import axios from "axios";
 import { Route, Switch } from "react-router-dom";
 
@@ -16,68 +16,103 @@ const convertDate = date => {
 
 export default class MainBody extends Component {
   state = {
-    mainVideo: {
-      comments: []
-    },
-    videos: []
+    mainVideo: [],
+
+    videosInfo: {},
+
+    videos: [],
+
+    default: " "
   };
 
   componentDidMount() {
-    //API request for the main video details
     const myKey = "d9ee6782-fc1c-4908-9ee6-d878e091f619";
-    const id = "1a8qhruuzky3";
     axios
-      .get(`https://project-2-api.herokuapp.com/videos/${id}?api_key=${myKey}`)
+      .get(`https://project-2-api.herokuapp.com/videos/?api_key=${myKey}`)
       .then(response => {
-        this.setState({
-          mainVideo: response.data
-        });
-      });
+        console.log("after first get", response.data);
+        this.setState(
+          {
+            videos: response.data,
+            default: response.data[0].id
+          },
+          () => {
+            // API GET request for the next videos section
+            console.log(this.state.default);
+            axios
+              .get(
+                `https://project-2-api.herokuapp.com/videos/${
+                  this.state.default
+                }?api_key=${myKey}`
+              )
+              .then(response => {
+                console.log("second get", response.data);
+                this.setState({
+                  videosInfo: response.data
+                });
+              })
 
-    // API GET request for the next videos section
-    axios
-      .get(`https://project-2-api.herokuapp.com/videos?api_key=${myKey}`)
-      .then(response => {
-        this.setState({
-          videos: response.data
-        });
+              .catch(function(err) {});
+          }
+        );
       });
   }
 
+  componentDidUpdate(prevProps) {
+    const myKey = "d9ee6782-fc1c-4908-9ee6-d878e091f619";
+
+    console.log("from did upddate ", this.props);
+    if (this.props.match.params.id !== prevProps.match.params.id) {
+      axios
+        .get(
+          `https://project-2-api.herokuapp.com/videos/${
+            this.props.match.params.id
+          }?api_key=${myKey}`
+        )
+        .then(response => {
+          this.setState({
+            videosInfo: response.data
+          });
+        });
+    }
+  }
+
   render() {
+    console.log("after second get", this.state.videos);
+
     return (
       <div className="container-allAndAside ">
         <div className="container-all">
           <div className="container">
             <div>
-              <h1>{this.state.mainVideo.title}</h1>
+              <h1>{this.state.videosInfo.title}</h1>
             </div>
 
             <div className="container-authorAndIcons">
               <div className="container-author">
-                <h2>{this.state.mainVideo.channel}</h2>
-                <h5>{convertDate(this.state.mainVideo.timestamp)}</h5>
+                <h2>{this.state.videosInfo.channel}</h2>
+                <h5>{convertDate(this.state.videosInfo.timestamp)}</h5>
               </div>
 
               <div className="container-icons">
                 <div className="container-icons__views">
                   <img src={Views} alt="" />
-                  <h5>{this.state.mainVideo.views}</h5>
+                  <h5>{this.state.videosInfo.views}</h5>
                 </div>
 
                 <div className="container-icons__likes">
                   <img src={Likes} alt="" />
-                  <h5>{this.state.mainVideo.likes}</h5>
+                  <h5>{this.state.videosInfo.likes}</h5>
                 </div>
               </div>
             </div>
           </div>
           <p className="description-paragraph">
-            {this.state.mainVideo.description}
+            {this.state.videosInfo.description}
           </p>
 
           {/* <AddComment addComment={this.addComment} /> */}
-          <Comments comments={this.state.mainVideo.comments} />
+          {/* <Comments comments={this.state.mainVideo.comments} /> */}
         </div>
         <div>
           <h2 className="videosTitle">NEXT VIDEO</h2>

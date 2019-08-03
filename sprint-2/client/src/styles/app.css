@@ -704,7 +704,7 @@ textarea {
   text-align: center;
 }
 
-textarea {
+.container-form__textarea {
   height: 143px;
   border: 1px solid #afafaf;
   border-radius: 5px;
@@ -759,15 +759,8 @@ textarea {
   .container-form__cancel {
     margin-top: 20px;
   }
-  textarea {
+  .container-form__textarea {
     margin-bottom: 40px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    margin-right: 180px;
-    margin-left: 180px;
   }
 }
 /*# sourceMappingURL=app.css.map */

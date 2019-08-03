@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Videos = props => {
   const { videos } = props;
-  console.log(props);
+  // console.log(props);
   const videoList = videos.map(video => {
     return (
       <div className="container-videos">
