@@ -6,6 +6,10 @@ import Comments from "./Comments";
 import AddComment from "./AddComment";
 import axios from "axios";
 import { Route, Switch } from "react-router-dom";
+// import Hero from "./Hero.js";
+import Play from "../assets/Icons/PNG/Icon-play.png";
+import Fullscreen from "../assets/Icons/PNG/Icon-fullscreen.png";
+import Volume from "../assets/Icons/PNG/Icon-volume.png";
 
 import Avatar from "../assets/Images/Mohan-muruge.jpg";
 
@@ -81,42 +85,68 @@ export default class MainBody extends Component {
     console.log("after second get", this.state.videos);
 
     return (
-      <div className="container-allAndAside ">
-        <div className="container-all">
-          <div className="container">
-            <div>
-              <h1>{this.state.videosInfo.title}</h1>
-            </div>
+      <div>
+        <div className="hero-background">
+          <video poster={this.state.videosInfo.image} />
 
-            <div className="container-authorAndIcons">
-              <div className="container-author">
-                <h2>{this.state.videosInfo.channel}</h2>
-                <h5>{convertDate(this.state.videosInfo.timestamp)}</h5>
-              </div>
+          <div className="controls">
+            <button className="controls-play">
+              <img src={Play} alt="" />
+            </button>
 
-              <div className="container-icons">
-                <div className="container-icons__views">
-                  <img src={Views} alt="" />
-                  <h5>{this.state.videosInfo.views}</h5>
-                </div>
+            <button className="controls-range">
+              <hr align="center" />
+            </button>
 
-                <div className="container-icons__likes">
-                  <img src={Likes} alt="" />
-                  <h5>{this.state.videosInfo.likes}</h5>
-                </div>
-              </div>
+            <div className="controls-buttons">
+              <button>
+                <img src={Fullscreen} alt="" />
+              </button>
+
+              <button>
+                <img src={Volume} alt="" />
+              </button>
             </div>
           </div>
-          <p className="description-paragraph">
-            {this.state.videosInfo.description}
-          </p>
-
-          {/* <AddComment addComment={this.addComment} /> */}
-          {/* <Comments comments={this.state.mainVideo.comments} /> */}
         </div>
-        <div>
-          <h2 className="videosTitle">NEXT VIDEO</h2>
-          <Videos videos={this.state.videos} />
+
+        <div className="container-allAndAside ">
+          <div className="container-all">
+            <div className="container">
+              <div>
+                <h1>{this.state.videosInfo.title}</h1>
+              </div>
+
+              <div className="container-authorAndIcons">
+                <div className="container-author">
+                  <h2>{this.state.videosInfo.channel}</h2>
+                  <h5>{convertDate(this.state.videosInfo.timestamp)}</h5>
+                </div>
+
+                <div className="container-icons">
+                  <div className="container-icons__views">
+                    <img src={Views} alt="" />
+                    <h5>{this.state.videosInfo.views}</h5>
+                  </div>
+
+                  <div className="container-icons__likes">
+                    <img src={Likes} alt="" />
+                    <h5>{this.state.videosInfo.likes}</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p className="description-paragraph">
+              {this.state.videosInfo.description}
+            </p>
+
+            {/* <AddComment addComment={this.addComment} /> */}
+            {/* <Comments comments={this.state.mainVideo.comments} /> */}
+          </div>
+          <div>
+            <h2 className="videosTitle">NEXT VIDEO</h2>
+            <Videos videos={this.state.videos} />
+          </div>
         </div>
       </div>
     );
