@@ -87,7 +87,10 @@ export default class MainBody extends Component {
     return (
       <div>
         <div className="hero-background">
-          <video poster={this.state.videosInfo.image} />
+          <video
+            poster={this.state.videosInfo.image}
+            className="hero-background__image"
+          />
 
           <div className="controls">
             <button className="controls-play">
