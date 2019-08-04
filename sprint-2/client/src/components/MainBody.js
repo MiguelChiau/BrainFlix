@@ -22,7 +22,9 @@ export default class MainBody extends Component {
   state = {
     mainVideo: [],
 
-    videosInfo: {},
+    videosInfo: {
+      comments: []
+    },
 
     videos: [],
 
@@ -143,8 +145,8 @@ export default class MainBody extends Component {
               {this.state.videosInfo.description}
             </p>
 
-            {/* <AddComment addComment={this.addComment} /> */}
-            {/* <Comments comments={this.state.mainVideo.comments} /> */}
+            <AddComment addComment={this.addComment} />
+            <Comments comments={this.state.videosInfo.comments} />
           </div>
           <div>
             <h2 className="videosTitle">NEXT VIDEO</h2>
