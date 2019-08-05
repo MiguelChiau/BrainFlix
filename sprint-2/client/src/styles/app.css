@@ -788,4 +788,11 @@ textarea {
     margin-bottom: 40px;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .container {
+    margin-right: 180px;
+    margin-left: 180px;
+  }
+}
 /*# sourceMappingURL=app.css.map */
