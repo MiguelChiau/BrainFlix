@@ -2,6 +2,13 @@
 .container {
   display: flex;
 
+  &-header {
+    font-family: AvenirDemi;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 32px;
+  }
+
   &-avatar {
     img {
       width: 42px;
@@ -9,15 +16,22 @@
       border-radius: 50%;
       margin-right: 16px;
       display: flex;
+      margin-top: 30px;
     }
   }
 }
 .container-All {
   display: block;
+  border-bottom: 1px solid $silver;
 }
 .container-title {
   margin-bottom: 32px;
   font-family: AvenirDemi;
+}
+
+.container-big {
+  display: flex;
+  align-items: flex-start;
 }
 
 label {
@@ -37,7 +51,6 @@ textarea {
 .container-comment {
   &__input {
     width: 100%;
-    border-bottom: 1px solid $silver;
   }
 
   &__btn {
@@ -85,11 +98,15 @@ textarea {
 
   .container-comment__btn {
     width: 160px;
+    // width: 100%;
+
     margin-right: 40px;
     margin-left: 16px;
   }
   textarea {
     width: 440px;
+    // width: 100px;
+
     height: 48px;
   }
 }
@@ -111,14 +128,15 @@ textarea {
   }
 
   .container-comment__btn {
-    // width: 160px;
-    width: 100%;
+    width: 160px;
+    // width: 100%;
 
     margin-right: 40px;
     margin-left: 16px;
   }
   textarea {
-    width: 440px;
+    // width: 440px;
+    width: 360px;
   }
 }
 

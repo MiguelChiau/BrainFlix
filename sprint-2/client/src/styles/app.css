@@ -411,6 +411,13 @@
   display: flex;
 }
 
+.container-header {
+  font-family: AvenirDemi;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+
 .container-avatar img {
   width: 42px;
   height: 42px;
@@ -419,15 +426,26 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 30px;
 }
 
 .container-All {
   display: block;
+  border-bottom: 1px solid #afafaf;
 }
 
 .container-title {
   margin-bottom: 32px;
   font-family: AvenirDemi;
+}
+
+.container-big {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 label {
@@ -446,7 +464,6 @@ textarea {
 
 .container-comment__input {
   width: 100%;
-  border-bottom: 1px solid #afafaf;
 }
 
 .container-comment__btn {
@@ -523,12 +540,12 @@ textarea {
     display: flex;
   }
   .container-comment__btn {
-    width: 100%;
+    width: 160px;
     margin-right: 40px;
     margin-left: 16px;
   }
   textarea {
-    width: 440px;
+    width: 360px;
   }
 }
 
