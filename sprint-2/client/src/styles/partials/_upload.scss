@@ -1,4 +1,4 @@
-.container {
+.containerr {
   margin-right: 16px;
   margin-left: 16px;
   font-family: AvenirDemi;
@@ -26,7 +26,7 @@
   }
 }
 
-.container-form {
+.containerr-form {
   &__addTitle {
     color: $silver;
     margin-top: 32px;
@@ -61,7 +61,7 @@
   }
 }
 
-.container-form__textarea {
+.containerr-form__textarea {
   height: 143px;
   border: 1px solid $silver;
   border-radius: 5px;
@@ -74,7 +74,7 @@
 
 //For Tablet
 @media screen and (min-width: 768px) {
-  .container {
+  .containerr {
     margin-right: 24px;
     margin-left: 24px;
 
@@ -118,13 +118,13 @@
       }
     }
   }
-  .container-form__textarea {
+  .containerr-form__textarea {
     margin-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .container {
+  .containerr {
     margin-right: 180px;
     margin-left: 180px;
   }

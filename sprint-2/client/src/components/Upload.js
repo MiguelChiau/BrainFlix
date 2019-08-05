@@ -6,34 +6,34 @@ import image from "../assets/Images/Upload-video-preview.jpg";
 
 function Upload() {
   return (
-    <div className="container">
+    <div className="containerr">
       {/* <Header /> */}
 
-      <h1 className="container-title">Upload Video</h1>
-      <h5 className="container-label">VIDEO THUMBNAIL</h5>
-      <img src={image} className="container-thumbnail" />
+      <h1 className="containerr-title">Upload Video</h1>
+      <h5 className="containerr-label">VIDEO THUMBNAIL</h5>
+      <img src={image} className="containerr-thumbnail" />
 
       <form className="form">
-        <div className="container-form">
-          <p className="container-form__addTitle">TITLE YOU VIDEO</p>
+        <div className="containerr-form">
+          <p className="containerr-form__addTitle">TITLE YOU VIDEO</p>
           <input
             type="text"
             name="videotitle"
             placeholder="Add a title to your video"
-            className="container-form__add"
+            className="containerr-form__add"
           />
-          <p className="container-form__addDescription">
+          <p className="containerr-form__addDescription">
             ADD A VIDEO DESCRIPTION
           </p>
 
           <textarea
             placeholder="Add a descriptions of your video"
-            className="container-form__textarea"
+            className="containerr-form__textarea"
           />
 
-          <div className="container-form__inputs">
-            <button className="container-form__publish">PUBLISH</button>
-            <p className="container-form__cancel">CANCEL</p>
+          <div className="containerr-form__inputs">
+            <button className="containerr-form__publish">PUBLISH</button>
+            <p className="containerr-form__cancel">CANCEL</p>
           </div>
         </div>
       </form>

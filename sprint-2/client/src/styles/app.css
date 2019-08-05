@@ -666,7 +666,7 @@ textarea {
   line-height: 18px;
 }
 
-.container {
+.containerr {
   margin-right: 16px;
   margin-left: 16px;
   font-family: AvenirDemi;
@@ -674,7 +674,7 @@ textarea {
   line-height: 20px;
 }
 
-.container-title {
+.containerr-title {
   font-family: AvenirBold;
   font-size: 24px;
   line-height: 32px;
@@ -683,24 +683,24 @@ textarea {
   margin-bottom: 32px;
 }
 
-.container-thumbnail {
+.containerr-thumbnail {
   width: 100%;
   height: 100%;
   border-radius: 5px;
 }
 
-.container-label {
+.containerr-label {
   margin-bottom: 10px;
   color: #afafaf;
   font-family: AvenirDemi;
 }
 
-.container-form__addTitle {
+.containerr-form__addTitle {
   color: #afafaf;
   margin-top: 32px;
 }
 
-.container-form__add {
+.containerr-form__add {
   width: 100%;
   height: 40px;
   border: 1px solid #afafaf;
@@ -710,11 +710,11 @@ textarea {
   padding-left: 20px;
 }
 
-.container-form__addDescription {
+.containerr-form__addDescription {
   color: #afafaf;
 }
 
-.container-form__publish {
+.containerr-form__publish {
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -724,12 +724,12 @@ textarea {
   background-color: #0095ff;
 }
 
-.container-form__cancel {
+.containerr-form__cancel {
   color: #0095ff;
   text-align: center;
 }
 
-.container-form__textarea {
+.containerr-form__textarea {
   height: 143px;
   border: 1px solid #afafaf;
   border-radius: 5px;
@@ -741,11 +741,11 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .containerr {
     margin-right: 24px;
     margin-left: 24px;
   }
-  .container-title {
+  .containerr-title {
     font-size: 36px;
     line-height: 44px;
     padding-top: 48px;
@@ -753,21 +753,21 @@ textarea {
     padding-bottom: 32px;
     border-bottom: 1px solid #afafaf;
   }
-  .container-label {
+  .containerr-label {
     margin-top: 40px;
   }
-  .container-thumbnail {
+  .containerr-thumbnail {
     width: 344px;
     height: 183px;
   }
-  .container-form__addTitle {
+  .containerr-form__addTitle {
     margin-top: 40px;
   }
-  .container-form__add {
+  .containerr-form__add {
     padding-top: 24px;
     padding-bottom: 24px;
   }
-  .container-form__inputs {
+  .containerr-form__inputs {
     padding-top: 40px;
     border-top: 1px solid #afafaf;
     display: -webkit-box;
@@ -777,20 +777,20 @@ textarea {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .container-form__publish {
+  .containerr-form__publish {
     width: 160px;
     margin-right: 48px;
   }
-  .container-form__cancel {
+  .containerr-form__cancel {
     margin-top: 20px;
   }
-  .container-form__textarea {
+  .containerr-form__textarea {
     margin-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .container {
+  .containerr {
     margin-right: 180px;
     margin-left: 180px;
   }
