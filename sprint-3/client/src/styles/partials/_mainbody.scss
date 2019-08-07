@@ -1,0 +1,162 @@
+//Mobile
+.container-all {
+  margin-right: 16px;
+  margin-left: 16px;
+  display: block;
+  font-family: AvenirBold;
+  display: block;
+
+  h1 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 16px;
+    margin-top: 32px;
+    font-family: AvenirBold;
+  }
+}
+
+.container {
+  display: block;
+}
+.container-authorAndIcons {
+  display: block;
+  border-bottom: 1px solid $silver;
+}
+
+.container-author {
+  display: flex;
+  margin-bottom: 32px;
+
+  h2 {
+    font-family: AvenirDemi;
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 8px;
+    text-align: center;
+  }
+  //The date
+  h5 {
+    font-family: AvenirRegular;
+    color: $silver;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+.container-icons {
+  display: flex;
+  margin-bottom: 24px;
+
+  h5 {
+    font-family: AvenirRegular;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  &__views {
+    display: flex;
+    margin-right: 20px;
+    img {
+      margin-right: 8px;
+    }
+  }
+  &__likes {
+    display: flex;
+    img {
+      margin-right: 8px;
+    }
+  }
+}
+
+// Tablet
+@media screen and (min-width: 768px) {
+  .container-all {
+    margin-right: 24px;
+    margin-left: 24px;
+
+    h1 {
+      font-size: 36px;
+      line-height: 44px;
+      margin-bottom: 24px;
+      margin-top: 48px;
+    }
+  }
+
+  .container-authorAndIcons {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container-author {
+    margin-bottom: 0px;
+
+    h2 {
+      font-family: AvenirDemi;
+      font-size: 24px;
+      line-height: 32px;
+      margin-right: 8px;
+      text-align: center;
+    }
+
+    h5 {
+      font-family: AvenirRegular;
+      color: $silver;
+      font-size: 12px;
+      line-height: 20px;
+      text-align: center;
+      padding-top: 5px;
+    }
+  }
+
+  .container-icons {
+    h5 {
+      font-family: AvenirRegular;
+      font-size: 12px;
+      line-height: 20px;
+      padding-top: 5px;
+      text-align: center;
+    }
+    &__views {
+      margin-right: 24px;
+
+      img {
+        margin-right: 8px;
+      }
+    }
+    &__likes {
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.videosTitle {
+  font-family: AvenirDemi;
+  color: $silver;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-allAndAside {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container-allAndAside {
+    display: flex;
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+
+  .container-all {
+    width: 60%;
+  }
+}
