@@ -29,49 +29,35 @@ export default class MainBody extends Component {
   };
 
   componentDidMount() {
-    const myKey = "d9ee6782-fc1c-4908-9ee6-d878e091f619";
-    axios
-      .get(`https://project-2-api.herokuapp.com/videos/?api_key=${myKey}`)
-      .then(response => {
-        console.log("after first get", response.data);
-        this.setState(
-          {
-            videos: response.data,
-            default: response.data[0].id
-          },
-          () => {
-            // API GET request for the next videos section
-            console.log(this.state.default);
-            axios
-              .get(
-                `https://project-2-api.herokuapp.com/videos/${
-                  this.state.default
-                }?api_key=${myKey}`
-              )
-              .then(response => {
-                console.log("second get", response.data);
-                this.setState({
-                  videosInfo: response.data
-                });
-              })
+    axios.get(`http://localhost:8080`).then(response => {
+      this.setState(
+        {
+          videos: response.data,
+          default: response.data[0].id
+        },
+        () => {
+          // API GET request for the next videos section
+          console.log(this.state.default);
+          axios
+            .get(`http://localhost:8080/videos/${this.state.default}`)
+            .then(response => {
+              // console.log("second get", response.data);
+              this.setState({
+                videosInfo: response.data
+              });
+            })
 
-              .catch(function(err) {});
-          }
-        );
-      });
+            .catch(function(err) {});
+        }
+      );
+    });
   }
 
   componentDidUpdate(prevProps) {
-    const myKey = "d9ee6782-fc1c-4908-9ee6-d878e091f619";
-
     console.log("from did update ", this.props);
     if (this.props.match.params.id !== prevProps.match.params.id) {
       axios
-        .get(
-          `https://project-2-api.herokuapp.com/videos/${
-            this.props.match.params.id
-          }?api_key=${myKey}`
-        )
+        .get(`http://localhost:8080/videos/${this.props.match.params.id}`)
         .then(response => {
           this.setState({
             videosInfo: response.data

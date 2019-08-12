@@ -1,5 +1,6 @@
 const express = require("express");
 const videosRouter = require("./routes/videos");
+const cors = require("cors");
 // This is to avoid hardcoding a ports
 const port = process.argv[2] || 8080;
 
@@ -9,6 +10,7 @@ const app = express();
 app.use(express.json());
 //This is to handle Url encoded data
 app.use(express.urlencoded({ extended: true }));
+app.use(cors());
 
 //This is the route to the videos API and chosen port
 app.use("/videos", videosRouter);
