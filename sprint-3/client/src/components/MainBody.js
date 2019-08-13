@@ -69,14 +69,15 @@ export default class MainBody extends Component {
     const videos = this.state.videos.filter(video => {
       return video.id !== this.props.match.params.id;
     });
-    console.log(this.state);
-    console.log(this.state.videosInfo);
+    // console.log(this.state);
+    // console.log(this.state.videosInfo);
     if (
       Object.entries(this.state.videosInfo).length === 0 &&
       this.state.videosInfo.constructor === Object
     ) {
-      return <div>Loading</div>;
+      return <div>Loading...</div>;
     }
+
     return (
       <div>
         <div className="hero-background">

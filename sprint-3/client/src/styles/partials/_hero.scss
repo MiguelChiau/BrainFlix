@@ -15,7 +15,6 @@
   bottom: 20px;
   margin-right: 16px;
   margin-left: 16px;
-
   &-play {
     img {
       padding: 5px 15px 5px 20px;
@@ -36,6 +35,7 @@
     border: 2px solid black;
     border-radius: 2px;
     width: 100px;
+    background-color: $blue;
   }
 
   &-buttons {

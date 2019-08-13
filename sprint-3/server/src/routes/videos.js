@@ -24,9 +24,9 @@ router.get("/:videosId", (req, res) => {
 //Now to create a new video
 router.post("/", (req, res) => {
   const newVideo = {
-    image: req.body.image,
-    title: req.body.title,
-    channel: req.body.channel,
+    image: "https://i.imgur.com/1vH49b6.jpg",
+    title: "Bird on Ice",
+    channel: "Miguel Chiau",
     //This is to generate a unique id for each video
     id: uuid.v4()
   };
@@ -38,8 +38,8 @@ router.post("/", (req, res) => {
   const newVideoDetails = {
     id: uuid.v4(),
     title: req.body.title,
-    channel: req.body.channel,
-    image: req.body.image,
+    channel: "Miguel Chiau",
+    image: "https://i.imgur.com/1vH49b6.jpg",
     description: req.body.description,
     views: "1000",
     likes: "2000",
@@ -76,8 +76,7 @@ router.post("/", (req, res) => {
   videoDetails.push(newVideoDetails);
 
   helper.writeJSONFile(videoDetailsJsonFile, videoDetails);
-
-  return res.send(newVideo);
+  res.send(newVideo);
 });
 
 module.exports = router;
