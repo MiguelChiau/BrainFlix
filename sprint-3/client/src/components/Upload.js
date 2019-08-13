@@ -5,18 +5,18 @@ import axios from "axios";
 import image from "../assets/Images/Upload-video-preview.jpg";
 
 //This is to collect the information that the user will type
-// function Upload() {
-//   const uploadVideo = event => {
-//     event.preventDefault();
-//     const form = event.target;
-//     const name = event.target.videoDescription.value;
-//     const title = event.target.videoTitle.value;
+function Upload() {
+  const uploadVideo = event => {
+    event.preventDefault();
+    const form = event.target;
+    const name = event.target.videoDescription.value;
+    const title = event.target.videoTitle.value;
 
-//     //Now using axios to post this info
-//     // const myKey = "d9ee6782-fc1c-4908-9ee6-d878e091f619";
-//     // axios.post(`https://project-2-api.herokuapp.com/videos/?api_key=${myKey}`)
-//     //   .then;
-//   };
+    //Now using axios to post this info
+    // const myKey = "d9ee6782-fc1c-4908-9ee6-d878e091f619";
+    // axios.post(`https://project-2-api.herokuapp.com/videos/?api_key=${myKey}`)
+    //   .then;
+  };
 
   return (
     <div className="containerr">

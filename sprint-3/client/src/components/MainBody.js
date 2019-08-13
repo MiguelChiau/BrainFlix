@@ -19,9 +19,7 @@ const convertDate = date => {
 
 export default class MainBody extends Component {
   state = {
-    videosInfo: {
-      comments: []
-    },
+    videosInfo: {},
 
     videos: [],
 
@@ -29,7 +27,8 @@ export default class MainBody extends Component {
   };
 
   componentDidMount() {
-    axios.get(`http://localhost:8080`).then(response => {
+    axios.get(`http://localhost:8080/videos`).then(response => {
+      console.log(response.data);
       this.setState(
         {
           videos: response.data,
@@ -41,9 +40,8 @@ export default class MainBody extends Component {
           axios
             .get(`http://localhost:8080/videos/${this.state.default}`)
             .then(response => {
-              // console.log("second get", response.data);
               this.setState({
-                videosInfo: response.data
+                videosInfo: response.data[0]
               });
             })
 
@@ -60,7 +58,7 @@ export default class MainBody extends Component {
         .get(`http://localhost:8080/videos/${this.props.match.params.id}`)
         .then(response => {
           this.setState({
-            videosInfo: response.data
+            videosInfo: response.data[0]
           });
         });
     }
@@ -71,7 +69,14 @@ export default class MainBody extends Component {
     const videos = this.state.videos.filter(video => {
       return video.id !== this.props.match.params.id;
     });
-
+    console.log(this.state);
+    console.log(this.state.videosInfo);
+    if (
+      Object.entries(this.state.videosInfo).length === 0 &&
+      this.state.videosInfo.constructor === Object
+    ) {
+      return <div>Loading</div>;
+    }
     return (
       <div>
         <div className="hero-background">

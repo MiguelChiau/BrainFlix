@@ -36,11 +36,16 @@ router.post("/", (req, res) => {
   helper.writeJSONFile(videosJsonFile, videos);
 
   const newVideoDetails = {
-    image: req.body.image,
+    id: uuid.v4(),
     title: req.body.title,
     channel: req.body.channel,
-    //This is to generate a unique id for each video
-    id: uuid.v4(),
+    image: req.body.image,
+    description: req.body.description,
+    views: "1000",
+    likes: "2000",
+    duration: "4:01",
+    video: "https://project-2-api.herokuapp.com/stream",
+    timestamp: 1545162149000,
     comments: [
       {
         name: "Micheal Lyons",
