@@ -14,7 +14,7 @@ class Upload extends React.Component {
 
   postNewVideo = () => {
     axios
-      .post("API", {
+      .post(API, {
         title: this.state.title,
         description: this.state.description
       })
@@ -59,7 +59,12 @@ class Upload extends React.Component {
             />
 
             <div className="containerr-form__inputs">
-              <button className="containerr-form__publish">PUBLISH</button>
+              <button
+                className="containerr-form__publish"
+                onClick={this.postNewVideo}
+              >
+                PUBLISH
+              </button>
               <p className="containerr-form__cancel">CANCEL</p>
             </div>
           </div>
