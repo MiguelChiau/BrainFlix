@@ -1,4 +1,4 @@
-# BrainFlix
+# BrainFlix- Streaming Platform
 
 <img width="629" alt="brain" src="https://user-images.githubusercontent.com/49828283/103493350-935b0f00-4de5-11eb-905d-c9c9a38e9832.png">
 
